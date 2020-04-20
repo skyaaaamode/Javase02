@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+    $.ajax({
+        url:"/AjaxJson_war_exploded/ajaxServlet",
+        type:"POST",
+        data:{"username":"jack","age":18},
+        success:function (data) {
+            alert(data);
+        }, //响应成功后的回调函数
+        error:function () {
+            alert("出错了");
+        },//响应失败报错函数
+        dataType:"text"//设置接收到的响应数据的格式
+    });
+</script>
+</head>
+<body>
+<input type="button" value="原生js实现" onclick="fun()">
+<input type="text">
+</body>
+</html>

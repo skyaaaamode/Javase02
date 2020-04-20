@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        var person={"name":"张三","age":18};
+        for (var key in person)
+        {
+            document.write(key+":"+person[key]);
+        }
+        var persons={
+            persons:[
+                {"name":"张三","age":18},
+                {"name":"李四","age":24},
+                {"name":"王五","age":32}
+            ]
+        };
+
+
+        var ps=[
+                {"name":"张三","age":18},
+                {"name":"李四","age":24},
+                {"name":"王五","age":32}
+            ];
+</script>
+</head>
+<body>
+<input type="button" value="原生js实现" onclick="fun()">
+<input type="text">
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>常见事件</title>
+</head>
+
+<body>
+
+<script>
+    //onload是页面加载
+    window.onload=function () {
+        //失去焦点，常用于表单校验
+        // document.getElementById("username").onblur=function () {
+        //     alert("失去焦点了");
+        // }
+        document.getElementById("username").onmousedown=function (event) {
+            alert(event.button);
+        }
+        // document.getElementById("username").onmouseover=function () {
+        //     alert("鼠标在组件上");
+        // }
+    }
+</script>
+<input type="text" id="username">
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件</title>
+
+</head>
+<body>
+<!--事件的第一种写法，在html标签中定义js语句-->
+<img id="of" src="img/on.gif" >
+<script>
+    function f() {
+        alert("我被点了");
+    }
+    // 第二种方法通过获取对象，绑定事件
+    var light2=document.getElementById("of")
+    light2.onclick=f;//这里只用用函数名即可
+
+</script>
+</body>
+</html>

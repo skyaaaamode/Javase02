@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="注解" />
+        <module name="Recursive" />
+        <module name="Jnit" />
+        <module name="反射" />
+        <module name="File" />
+        <module name="Net" />
+        <module name="笔试题" />
+        <module name="Method" />
+        <module name="面试题" />
+        <module name="算法" />
+        <module name="IO" />
+        <module name="剑指offer" />
+        <module name="多线程" />
+        <module name="数据库链接池" />
+        <module name="JDBC" />
+        <module name="HomeWork" />
+        <module name="Lambda" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="11">
+      <module name="JDBC" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

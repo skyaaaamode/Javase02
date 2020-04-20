@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math对象</title>
+    <script>
+        //创建，特点:该对象无需创建，直接使用
+        document.write(Math.PI+"<br>");
+        document.write(Math.random()+"<br>");//返回0-1之间的随机数，含零不含1
+        document.write(Math.round(1.25)+"<br>");//四舍五入
+        document.write(Math.ceil(1.25)+"<br>");//向上取整
+        document.write(Math.floor(1.25)+"<br>");//向下取整
+        //取0-100的随机整数
+        function  gene() {
+            var x=Math.random();
+            x=x*100;
+            document.write(Math.floor(x));
+
+        }
+        gene();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

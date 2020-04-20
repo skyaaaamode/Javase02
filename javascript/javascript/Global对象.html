@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Global</title>
+    <script>
+        /**
+         * 全局变量
+         * 方法：
+         * encodeURI（）：url编码（把中文转码成可传输文字）
+         * decodeURI（）：url解码
+         * url编码：
+         * 传智播客   GBK：8字节  utf-8是12个字节    %加一个十六机制的编码
+         */
+        var str="周卓凡";
+        var encode=encodeURI(str);
+        document.write(encode);
+        var decode=decodeURI("%E5%91%A8%E5%8D%93%E5%87%A1");
+        document.write(decode);
+        /**
+         *  pasteInt()
+         */
+        document.write(parseInt("123"));
+        document.write(parseInt("123abc"));//只会依次转换数字，不是数字的不转换
+        /**
+         * isNaN判断一个值是不是NaN
+         * eval（）:将javascript的字符串转换成脚本执行
+         */
+        var a="alert('abc')";
+        eval(a);
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+d的方法出现了异常
+异常是InvocationTargetException
+异常产生的原因是：/ by zero
+一个出现出现了1个错误

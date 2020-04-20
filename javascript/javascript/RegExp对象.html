@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Regexp</title>
+    <script>
+        //单个字符[]:例如[a][ab][a-zA-Z0-9]  \d单个数字字符 \w单个单词字符
+        //量词符号：？代表0此或1此，*代表出现1次或多次，+代表出现1次或多次 {m,n} 出现>m<n的次数
+        //开始结束符号^  结束符号 $
+        //正则对象
+        // 创建
+        // var reg=new RegExp("正则表达式");
+        // var reg=/正则表达式/
+         var reg=new RegExp("\\w{6,12}$");//这一个为什么是false，字符串需要家反斜杠转义
+        var reg2=/^\w{6,12}$/;
+         var flag=reg.test("jianggg");
+        alert(flag);
+         alert(reg2.test("jianggg"));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

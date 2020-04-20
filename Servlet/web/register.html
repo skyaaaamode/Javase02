@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+</head>
+<body>
+   <img src="/zzf/checkCode" id="jpg">
+   <a href="javascript:void(0)" onclick="cn" id="check">看不清，换一张</a>
+   <script>
+       //1.给超链接或者图片绑定点击事件
+       function cn()
+       {
+           jpg.src="/zzf/checkCode?"+date();
+       }
+       window.onload
+       {
+           var jpg = document.getElementById("jpg");
+           jpg.onclick=function(){
+               //为了避免缓存，增加时间戳
+               var time = new Date().getTime();
+               jpg.src="/zzf/checkCode?"+time;
+           }
+           var check = document.getElementById("check");
+           check.onclick=function(){
+               var time = new Date().getTime();
+               jpg.src="/zzf/checkCode?"+time;
+           }
+
+       }
+   </script>
+</body>
+</html>

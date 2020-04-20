@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>案例表格</title>
+    <style>
+        .tr1{
+             background-color: pink;
+         }
+        .tr2{
+            background-color: white;
+        }
+    </style>
+    <script>
+        //1.在页面加载完成后绑定事件
+        window.onload=function () {
+            document.getElementById("selectall").onclick=function () {
+                var cbs=document.getElementsByName("选择");
+                for (var i=1;i<cbs.length;i++)
+                {
+                    cbs[i].checked=true;
+                }
+            }
+            document.getElementById("unselect").onclick=function () {
+                var cbs=document.getElementsByName("选择");
+                for (var i=1;i<cbs.length;i++)
+                {
+                    cbs[i].checked=false;
+                }
+            }
+            document.getElementById("reserse").onclick=function () {
+                var cbs=document.getElementsByName("选择");
+                for (var i=1;i<cbs.length;i++)
+                {
+                    cbs[i].checked=!cbs[i].checked;
+                }
+            }
+            document.getElementById("first").onclick=function () {
+                var cbs=document.getElementsByName("选择");
+                for (var i=1;i<cbs.length;i++)
+                {
+                    cbs[i].checked=this.checked;
+                }
+            }
+            var ddd=document.getElementsByTagName("tr");
+            for(var i=0;i<ddd.length;i++)
+            {
+            ddd[i].onmouseover=function() {
+                this.className="tr1"
+            }
+            ddd[i].onmouseout=function() {
+                    this.className="tr2"
+            }
+            }
+
+
+        };
+
+
+        function delTr(obj) {
+            var table=obj.parentNode.parentNode.parentNode;
+            var tr=obj.parentNode.parentNode;
+            table.removeChild(tr);
+        }
+
+    </script>
+</head>
+<style>
+    table{
+        margin: auto;
+        margin-top: 100px;
+        border: 2px solid black;
+        width: 500px;
+    }
+    th,td{
+        text-align: center;
+        border: 1px solid black;
+    }
+    div
+    {
+        margin-top: 10px;
+        margin-left: 40%;
+    }
+</style>
+<body>
+<table>
+    <caption>学生信息表</caption>
+    <tr >
+        <th><input type="checkbox" name="选择" id="first"></th>
+        <th>编号</th>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>操作</th>
+    </tr>
+    <tr >
+        <td><input type="checkbox" name="选择" ></td>
+        <td>1</td>
+        <td>令狐冲</td>
+        <td>男</td>
+        <td><a href="javascript:void(0)" onclick="delTr(this)"> 删除</a></td>
+    </tr>
+    <tr >
+    <td><input type="checkbox" name="选择"></td>
+    <td>2</td>
+    <td>任我行</td>
+    <td>男</td>
+    <td><a href="javascript:void(0)" onclick="delTr(this)"> 删除</a></td>
+    </tr>
+    <tr >
+    <td><input type="checkbox" name="选择"></td>
+    <td>3</td>
+    <td>岳不群</td>
+    <td>男</td>
+    <td><a href="javascript:void(0)" onclick="delTr(this)"> 删除</a></td>
+    </tr>
+</table>
+<div>
+    <input type="button" id="selectall" value="全选">
+    <input type="button" id="unselect" value="全不选">
+    <input type="button" id="reserse" value="反选">
+</div>
+
+
+</body>
+</html>

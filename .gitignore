@@ -1,0 +1,19 @@
+# Project exclude paths
+/File/target/
+/HomeWork/target/
+/IO/target/
+/Jnit/target/
+/Lambda/target/
+/Net/target/
+/out/
+/Recursive/target/
+/Stream/Method/target/
+/Stream/target/
+/target/
+/剑指offer/target/
+/反射/target/
+/数据库链接池/target/
+/注解/target/
+/笔试题/target/
+/算法/target/
+/面试题/target/

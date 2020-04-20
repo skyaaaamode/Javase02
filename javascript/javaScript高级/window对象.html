@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>window对象</title>
+
+</head>
+<body>
+<input type="button" id="btn" width="20px" value="打开">
+<input type="button" id="btnoff" width="20px" value="关闭">
+<script>
+    /**
+     * 怎么创建
+     方法
+     1.与弹出窗有关的方法
+     alert（）显示带有一段消息和确认的方法
+     confirm（）显示确定/取消的对话框，如果用户点击确认的按钮，返回true，点击取消的按钮，返回false
+     prompt()显示可提示用户输入的对话框
+     2.与打开关闭有关的方法
+     open（）打开新窗口
+     close()
+     3.与定时器有关的方法
+     setTimeout（）在指定的毫秒数后调用函数或者表达式  (fun ,timestamp)
+     clearTimeout()取消上一个函数的定时器(fun ,timestamp)
+     setInterval()按照指定的周期来调用函数或者表达式(fun ,timestamp)
+     clearInterval()取消由setInterval设置的timeout(fun ,timestamp)
+     属性
+     获取其他bom对象的属性,获取dom对象
+     特点：
+     1.window对象不需要创建，可以直接使用window使用，window.方法名
+     2.window引用可以省略    方法名（）
+     */
+
+
+        // var flag=confirm("你确定要退出吗？");
+        // if(flag) {
+        //     alert("确认");
+        // }
+        // else
+        // {
+        //     alert("手抖了");
+        // }
+
+
+    // var op=document.getElementById("btn");
+    // var newWindow;
+    // op.onclick=function () {
+    //     newWindow=open();
+    // }
+    // var op=document.getElementById("btnoff");
+    // op.onclick=function () {
+    //     newWindow.close();
+    // }
+    //一次性定时器
+    // var id=setTimeout("alert('boom~~~~')",3000);
+    // clearTimeout(id);
+    // function fun() {
+    //     alert('boom~~~~');
+    // }
+    // var id3=setInterval("alert('boom~~~~')",3000);
+    // clearInterval(id3);
+
+    document.write(history);
+
+
+
+</script>
+
+</body>
+</html>

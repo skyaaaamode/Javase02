@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            $("#username").blur(function () {
+                //获取username的值
+                var val = $(this).val();
+                //发送ajax请求
+                $.get("/findUserServlet",{username:val},function (data) {
+                    //期望服务器返回的数据格式是{userExist：true，msg：该用户名太受欢迎，请更换一个}
+                    //{userExist：false，msg：该用户名可用}
+                    if(data.userExist)
+                    {
+                        $("judge").css("color","red");
+                        $("judge").html(data.msg);
+                    }
+                    else
+                    {
+                        $("judge").css("color","green");
+                        $("judge").html(data.msg);
+
+                    }
+
+                },"json");
+            });
+        })
+    </script>
+</head>
+<body>
+<form action="" method="get">
+    <label for="username">用户名</label>
+    <input type="text" name="username" id="username"><br>
+    <span id="judge"></span>
+    <label for="password">密码</label>
+    <input type="password" name="password" id="password"><br>
+    <input type="submit" name="sub" id="sub" value="submit">
+</form>
+</body>
+</html>

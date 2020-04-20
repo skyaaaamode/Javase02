@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>cn.com.zhouzhuofan01.JavsSe02</groupId>
+    <artifactId>Javase02</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>File</module>
+        <module>Recursive</module>
+        <module>IO</module>
+        <module>Net</module>
+        <module>Lambda</module>
+        <module>Stream</module>
+        <module>HomeWork</module>
+        <module>Jnit</module>
+        <module>反射</module>
+        <module>注解</module>
+        <module>JDBC</module>
+        <module>JDBC</module>
+        <module>数据库链接池</module>
+        <module>算法</module>
+        <module>多线程</module>
+        <module>面试题</module>
+        <module>笔试题</module>
+        <module>剑指offer</module>
+    </modules>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
+        <java.version>11</java.version>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.18</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.9</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>

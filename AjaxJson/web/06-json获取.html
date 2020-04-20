@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        var person={"name":"张三","age":18};
+        //第一种获取
+        alert(person.name);
+        //2.第二种获取
+        alert(person["name"]);
+        //json的嵌套{}---->[]
+        var persons={
+            persons:[
+                {"name":"张三","age":18},
+                {"name":"李四","age":24},
+                {"name":"王五","age":32}
+            ]
+        };
+        //获取数组值
+        alert(persons.persons[2].name);
+        var persons=[
+                {"name":"张三","age":18},
+                {"name":"李四","age":24},
+                {"name":"王五","age":32}
+            ];
+        alert(persons[2].name);
+</script>
+</head>
+<body>
+<input type="button" value="原生js实现" onclick="fun()">
+<input type="text">
+</body>
+</html>

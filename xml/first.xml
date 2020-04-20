@@ -1,0 +1,12 @@
+<users>
+    <user id="1">
+        <name>zzf</name>
+        <age>18</age>
+        <gender>男</gender>
+    </user>
+    <user id="2">
+        <name>zzf01</name>
+        <age>28</age>
+        <gender>男</gender>
+    </user>
+</users>
